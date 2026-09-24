@@ -32,3 +32,37 @@ checksum:
 
 changelog:
   use: github
+
+# Homebrew (macOS and Linux) and Scoop (Windows). They need a token that can
+# write to the two repositories, TAP_GITHUB_TOKEN; without it these steps are
+# skipped and the rest of the release goes out as usual.
+homebrew_casks:
+  - name: mutegate
+    binaries: [mutegate]
+    repository:
+      owner: danilovid
+      name: homebrew-tap
+      token: "{{ .Env.TAP_GITHUB_TOKEN }}"
+    directory: Casks
+    homepage: "https://github.com/danilovid/mutegate-cli"
+    description: "Point your AI agents at a Mutegate DLP gateway"
+    skip_upload: '{{ if isEnvSet "TAP_GITHUB_TOKEN" }}auto{{ else }}true{{ end }}'
+    hooks:
+      post:
+        # The binaries are not signed; without this macOS refuses to run one
+        # downloaded from the internet.
+        install: |
+          if OS.mac?
+            system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/mutegate"]
+          end
+
+scoops:
+  - name: mutegate
+    repository:
+      owner: danilovid
+      name: scoop-bucket
+      token: "{{ .Env.TAP_GITHUB_TOKEN }}"
+    homepage: "https://github.com/danilovid/mutegate-cli"
+    description: "Point your AI agents at a Mutegate DLP gateway"
+    license: Apache-2.0
+    skip_upload: '{{ if isEnvSet "TAP_GITHUB_TOKEN" }}auto{{ else }}true{{ end }}'
