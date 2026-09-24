@@ -15,11 +15,11 @@ every run is its own session in the gateway's incident feed and cost figures.
 ## Install
 
 Download the archive for your system from the
-[releases](https://github.com/danilovid/mutegate-cli/releases) — Linux, macOS
+[releases](https://github.com/Mutegate/cli/releases) — Linux, macOS
 and Windows, amd64 and arm64 — or build it:
 
 ```bash
-go install github.com/danilovid/mutegate-cli/cmd/mutegate@latest
+go install github.com/mutegate/cli/cmd/mutegate@latest
 ```
 
 ## Sign in

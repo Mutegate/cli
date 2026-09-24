@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/danilovid/mutegate-cli/internal/cli"
+	"github.com/mutegate/cli/internal/cli"
 )
 
 // version is stamped at release time via -ldflags "-X main.version=...".

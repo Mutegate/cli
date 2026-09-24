@@ -1,4 +1,4 @@
-module github.com/danilovid/mutegate-cli
+module github.com/mutegate/cli
 
 go 1.26.0
 

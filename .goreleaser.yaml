@@ -44,7 +44,7 @@ homebrew_casks:
       name: homebrew-tap
       token: "{{ .Env.TAP_GITHUB_TOKEN }}"
     directory: Casks
-    homepage: "https://github.com/danilovid/mutegate-cli"
+    homepage: "https://github.com/Mutegate/cli"
     description: "Point your AI agents at a Mutegate DLP gateway"
     skip_upload: '{{ if isEnvSet "TAP_GITHUB_TOKEN" }}auto{{ else }}true{{ end }}'
     hooks:
@@ -62,7 +62,7 @@ scoops:
       owner: danilovid
       name: scoop-bucket
       token: "{{ .Env.TAP_GITHUB_TOKEN }}"
-    homepage: "https://github.com/danilovid/mutegate-cli"
+    homepage: "https://github.com/Mutegate/cli"
     description: "Point your AI agents at a Mutegate DLP gateway"
     license: Apache-2.0
     skip_upload: '{{ if isEnvSet "TAP_GITHUB_TOKEN" }}auto{{ else }}true{{ end }}'
