@@ -23,6 +23,6 @@ jobs:
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Writes to danilovid/homebrew-tap and danilovid/scoop-bucket;
+          # Writes to Mutegate/homebrew-tap and Mutegate/scoop-bucket;
           # without it, those two steps are skipped.
           TAP_GITHUB_TOKEN: ${{ secrets.TAP_GITHUB_TOKEN }}

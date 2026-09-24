@@ -40,7 +40,7 @@ homebrew_casks:
   - name: mutegate
     binaries: [mutegate]
     repository:
-      owner: danilovid
+      owner: Mutegate
       name: homebrew-tap
       token: "{{ .Env.TAP_GITHUB_TOKEN }}"
     directory: Casks
@@ -59,7 +59,7 @@ homebrew_casks:
 scoops:
   - name: mutegate
     repository:
-      owner: danilovid
+      owner: Mutegate
       name: scoop-bucket
       token: "{{ .Env.TAP_GITHUB_TOKEN }}"
     homepage: "https://github.com/Mutegate/cli"

@@ -14,9 +14,22 @@ every run is its own session in the gateway's incident feed and cost figures.
 
 ## Install
 
-Download the archive for your system from the
-[releases](https://github.com/Mutegate/cli/releases) — Linux, macOS
-and Windows, amd64 and arm64 — or build it:
+Homebrew (macOS and Linux):
+
+```bash
+brew install --cask mutegate/tap/mutegate
+```
+
+Scoop (Windows):
+
+```bash
+scoop bucket add mutegate https://github.com/Mutegate/scoop-bucket
+scoop install mutegate/mutegate
+```
+
+Or download the archive for your system from the
+[releases](https://github.com/Mutegate/cli/releases) — Linux, macOS and
+Windows, amd64 and arm64 — or build it:
 
 ```bash
 go install github.com/mutegate/cli/cmd/mutegate@latest
