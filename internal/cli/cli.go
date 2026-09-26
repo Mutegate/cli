@@ -1,7 +1,7 @@
 // Package cli is the command line for the people whose agents go through a
 // Mutegate gateway: sign in to it once, check it answers, and run or
 // configure a tool so its traffic goes there. The gateway itself is
-// github.com/danilovid/mutegate; this talks to it over its public API only.
+// github.com/Mutegate/mutegate; this talks to it over its public API only.
 package cli
 
 import (
@@ -96,5 +96,5 @@ const usage = `mutegate — point your AI agents at a Mutegate gateway.
 The key comes from the gateway's console, Settings → API keys. MUTEGATE_URL
 and MUTEGATE_API_KEY, when set, take the place of what login saved.
 
-The gateway: https://github.com/danilovid/mutegate
+The gateway: https://github.com/Mutegate/mutegate
 `
