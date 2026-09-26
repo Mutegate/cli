@@ -1,6 +1,6 @@
 # mutegate
 
-The command line for [Mutegate](https://github.com/danilovid/mutegate), a
+The command line for [Mutegate](https://github.com/Mutegate/mutegate), a
 self-hosted DLP gateway for AI agents: sign in to your gateway once, then run
 any tool with its traffic going through it.
 
@@ -98,7 +98,7 @@ The file as it was is kept next to it, with `.mutegate-backup` added to its
 name, and a file that is not plain JSON is left alone. Tools configured in a
 settings window — Cursor, Cline, Continue — get the values to enter and a link
 to their guide in the gateway's
-[CONNECT.md](https://github.com/danilovid/mutegate/blob/main/docs/CONNECT.md).
+[CONNECT.md](https://github.com/Mutegate/mutegate/blob/main/docs/CONNECT.md).
 
 ## What it talks to
 
