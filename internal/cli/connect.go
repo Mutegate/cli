@@ -50,7 +50,7 @@ func connect(env *Env, args []string) error {
 
 // guideURL is a tool's section of docs/CONNECT.md, or the top of it.
 func guideURL(tool string) string {
-	const doc = "https://github.com/danilovid/mutegate/blob/main/docs/CONNECT.md"
+	const doc = "https://github.com/Mutegate/mutegate/blob/main/docs/CONNECT.md"
 	anchors := map[string]string{
 		"cursor": "cursor", "cline": "cline", "continue": "continue", "aider": "aider",
 		"opencode": "opencode", "langchain": "langchain",
